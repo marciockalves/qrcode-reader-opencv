@@ -1,0 +1,46 @@
+[
+    {
+        "label": "cv2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "cv2",
+        "description": "cv2",
+        "detail": "cv2",
+        "documentation": {}
+    },
+    {
+        "label": "screen_capture",
+        "importPath": "app.screen_capture",
+        "description": "app.screen_capture",
+        "isExtraImport": true,
+        "detail": "app.screen_capture",
+        "documentation": {}
+    },
+    {
+        "label": "pyscreenshot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pyscreenshot",
+        "description": "pyscreenshot",
+        "detail": "pyscreenshot",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "app.main",
+        "description": "app.main",
+        "peekOfCode": "def main():\n    screen_capture()\n    img = cv2.imread(\"./app/img.png\")\n    img_gray = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)\n    decode = cv2.QRCodeDetector()\n    retval, decoded_info, points, straight_qrcode = decode.detectAndDecodeMulti(img)\n    print(decoded_info)\nif __name__ == \"__main__\":\n    main()",
+        "detail": "app.main",
+        "documentation": {}
+    },
+    {
+        "label": "screen_capture",
+        "kind": 2,
+        "importPath": "app.screen_capture",
+        "description": "app.screen_capture",
+        "peekOfCode": "def screen_capture():\n    imagem = ImageGrab.grab()\n    imagem.save('./app/img.png', 'png')",
+        "detail": "app.screen_capture",
+        "documentation": {}
+    }
+]

@@ -1,6 +1,12 @@
 import cv2
 
+from app.screen_capture import screen_capture
+
+
 def main():
+
+    screen_capture()
+
     img = cv2.imread("./app/img.png")
 
     img_gray = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
